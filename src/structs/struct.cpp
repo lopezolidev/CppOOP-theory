@@ -19,7 +19,7 @@ int main(){
     cout << "name of p is: " << p.name << endl << "age of p is: " << p.age << endl;
     cout << endl;
 
-    Person p2 = Person(); //initializin variable of Person type with a space in memory dedicated to Person, thereby allocating a space of string name and int age
+    Person p2 = Person(); //initializing variable of Person type with a space in memory dedicated to Person, thereby allocating a space of string name and int age during compilling time, i.e: since the beginning
     p2.name = "Xavier";
     p2.age = 32;
 
@@ -35,6 +35,19 @@ int main(){
     cout << "Struct with pointers: " << endl;
     cout << "Name of p3 is: " << p3->name << endl << "age of p3: " << p3->age << endl;
     cout << endl;
+
+
+    cout << "&p3: " << &p3 << endl;
+    cout << "&p3->name: " << &p3->name << endl;
+    cout << "sizeof p3: " << sizeof(p3) << endl;
+
+    cout << "sizeof p3->name: " << sizeof(p3->name) << endl;
+    cout << "sizeof &p3->name: " << sizeof(&p3->name) << endl;
+
+    cout << "sizeof p3->age: " << sizeof(p3->age) << endl;
+    cout << "sizeof &p3->age: " << sizeof(&p3->age) << endl;
+
+    cout << "sizeof Person: " << sizeof(Person) << endl; 
 
     return 0;
 }

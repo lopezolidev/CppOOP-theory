@@ -27,6 +27,7 @@ int main(){
 
     cout << "*pointer " << *pointer << endl;
     //output: *pointer A
+    cout << "&pointer " << &pointer << endl;
  
 
     char character = 'B';
